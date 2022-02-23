@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.weather-box {
+    background: #ffffff8a;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    min-width: 300px;
+}
+
+div#app {
+    background-image: radial-gradient(#e6f2ff, #cee6ff);
+}
+
+.search-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.weather-box .temp {
+    font-weight: bold;
+    text-shadow: 1px 1px #afafaf;
+    margin-top: 8px;
+}
+
+.weather-box svg {
+    display: inline-block;
+}
+
+.location-box .date {
+    font-weight: 600;
+}
+
+.search-box svg {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.5;
+}
+
+.weather-icon {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.weather-icon .weather {
+    background: #fff;
+    padding: 3px 10px;
+    border: 1px solid #c8c8c8;
+    line-height: 1;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: -10%;
+    font-size: 15px;
+    margin-bottom: 5%;
+}
+
+input.search-bar {
+    text-align: center;
+    box-shadow: 1px 1px 2px #00000070;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.location-box .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-box .location svg {
+    margin-right: 5px;
+}
