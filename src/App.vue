@@ -50,7 +50,7 @@ export default {
   }, 
   data() {
     return {
-      api_key: '207a1e6a9123b10b4ae0a07ca97f6692',
+      api_key: '',
       url_base: 'http://api.openweathermap.org/data/2.5/',
       query: '',
       weather: {},
