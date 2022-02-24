@@ -12,22 +12,69 @@ main {
     padding: 25px;
 }
 
-.weather-box {
-    background: #ffffff8a;
-    display: inline-block;
-    padding: 20px 30px;
-    border-radius: 10px;
-    margin-top: 20px;
-    min-width: 300px;
-}
-
 div#app {
     background-image: radial-gradient(#e6f2ff, #cee6ff);
+}
+
+div#app.dark {
+    background-image: radial-gradient(#444444, #000);
 }
 
 .search-box {
     margin-bottom: 20px;
     position: relative;
+}
+
+input.search-bar {
+    text-align: center;
+    box-shadow: 1px 1px 2px #00000070;
+    text-transform: capitalize;
+    padding-left: 100px;
+    padding-right: 20px;
+    width: calc(100% - 85px);
+    display: inline-block
+}
+
+.location-box .date {
+    font-weight: 600;
+}
+
+.search-box>svg {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0.5;
+}
+
+.search-box>a>svg {
+    display: inline-block;
+}
+
+.modebtn {
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 7px 7px;
+    font-size: 12px;
+    margin-left: 10px;
+    border-color: #000;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.weather-box {
+    background: #ffffff7a;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 12px #0000003b;
+    min-width: 300px;
 }
 
 .weather-box .temp {
@@ -40,20 +87,9 @@ div#app {
     display: inline-block;
 }
 
-.location-box .date {
-    font-weight: 600;
-}
-
-.search-box svg {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    opacity: 0.5;
-}
-
 .weather-icon {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
 }
 
@@ -67,14 +103,6 @@ div#app {
     margin-left: -10%;
     font-size: 15px;
     margin-bottom: 5%;
-}
-
-input.search-bar {
-    text-align: center;
-    box-shadow: 1px 1px 2px #00000070;
-    text-transform: capitalize;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .location-box .location {
