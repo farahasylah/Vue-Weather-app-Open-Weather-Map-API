@@ -32,6 +32,11 @@
           </div>
           <div class="temp text-6xl">{{ Math.round(weather.main.temp) }}°C</div>
         </div>
+        <br>
+        <button v-on:click="compare_places">Compare</button>
+        <div v-for="(weatherlists, index) in weatherlist" :key="weatherlists">
+        {{index}} - {{weatherlists.name}}
+      </div>
 
       </div>
       
@@ -55,6 +60,7 @@ export default {
       query: '',
       weather: {},
       darkmode: false,
+      weatherlist: [],
     }
   },
   methods :{
@@ -102,6 +108,9 @@ export default {
     },
     darkMode(){
       this.darkmode = !this.darkmode;
+    },
+    compare_places(){
+      this.weatherlist.push(this.weather);
     },
 
   },
